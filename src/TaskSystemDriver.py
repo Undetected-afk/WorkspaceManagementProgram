@@ -1,4 +1,3 @@
-# TaskSystemDriver.py
 from TaskSystem import TaskDatabase
 
 # Create task database
