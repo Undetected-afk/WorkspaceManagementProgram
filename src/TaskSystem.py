@@ -1,4 +1,3 @@
-# TaskSystem.py
 from Node import Node
 
 class TaskNode(Node):
