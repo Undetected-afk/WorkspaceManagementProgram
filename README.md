@@ -1,7 +1,7 @@
 # Workspace Management Program
 
 ## Overview
-The Workspace Management Program is designed to manage tasks, files, and budgets in a workspace environment. The project is organized into three primary systems:
+The Workspace Management Program is a Python-based application designed to help manage and organize key elements of a workspace. It consists of three main systems: a Task Management System that tracks tasks and their dependencies, ensuring they are completed in the correct order; a File System that organizes files into folders, allowing users to efficiently manage and retrieve files; and a Budget Management System that helps manage department budgets, track transactions, and monitor financial allocations. Together, these components provide a comprehensive solution for organizing tasks, files, and finances within a workspace, making it easier to manage and optimize daily operations:
 1. **Task Management System** (using graphs)
 2. **Workspace File System** (using trees)
 3. **Budget Management System** (using trees)
