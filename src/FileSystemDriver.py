@@ -5,6 +5,7 @@ from FileSystem import FolderNode, FileNode
 folder1 = FolderNode("Documents")
 folder2 = FolderNode("Downloads")
 
+# Create file nodes
 file1 = FileNode("file1.txt")
 file2 = FileNode("file2.txt")
 file3 = FileNode("file3.pdf")
