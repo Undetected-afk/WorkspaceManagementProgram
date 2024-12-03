@@ -16,9 +16,17 @@ The Workspace Management Program is designed to manage tasks, files, and budgets
    ```bash
    git clone https://github.com/your-username/WorkspaceManagementProgram.git
 
-## Project Structure
+### Project Directory Structure
 
-WorkspaceManagementProgram/ │ ├── src/ # Source code directory │ ├── Node.py # Base Node class for all systems │ ├── FileSystem.py # File system classes (FolderNode, FileNode) │ ├── FileSystemDriver.py # Driver script for file system functionality │ ├── TaskSystem.py # Task management classes (TaskDatabase, TaskNode) │ ├── TaskSystemDriver.py # Driver script for task management functionality │ ├── BudgetSystem.py # Budget management classes (DepartmentNode, BudgetNode) │ ├── BudgetSystemDriver.py # Driver script for budget management functionality ├── README.md # Project overview and instructions
+- **src/**: The source code directory where all Python scripts for the project are stored.
+  - **Node.py**: Contains the base `Node` class that is used for all components (task system, file system, and budget system).
+  - **FileSystem.py**: Contains classes related to the file system (`FolderNode` and `FileNode`) to model the directory and files structure.
+  - **FileSystemDriver.py**: A driver script to test and demonstrate the functionality of the file system.
+  - **TaskSystem.py**: Contains classes for managing tasks and task dependencies (e.g., `TaskDatabase`, `TaskNode`).
+  - **TaskSystemDriver.py**: A driver script to test and demonstrate the functionality of the task management system.
+  - **BudgetSystem.py**: Contains classes for managing budgets and departments (`DepartmentNode`, `BudgetNode`, etc.).
+  - **BudgetSystemDriver.py**: A driver script to test and demonstrate the functionality of the budget management system.
+- **README.md**: The project overview, installation instructions, and usage guide.
 
 
 ### Systems Overview
