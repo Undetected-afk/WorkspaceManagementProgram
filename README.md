@@ -59,3 +59,30 @@ The Workspace Management Program is a Python-based application designed to help 
    - FileSystem.py: Defines the FolderNode and FileNode classes for representing the file system structure. The FolderNode class handles file storage, while the FileNode class handles individual files.
    - TaskSystem.py: Defines the TaskDatabase and TaskNode classes for managing tasks and dependencies. The TaskDatabase class stores tasks, and the TaskNode class represents a task with potential dependencies.
    - BudgetSystem.py: Defines classes for managing budgets (DepartmentNode and BudgetNode) and handling transactions for departments in the workspace.
+
+
+### Updates to the Program:
+
+#### 1. **Task Management System:**
+- **TaskNode Class Updates:**
+  - The `TaskNode` class now includes functionality for managing task dependencies and statuses.
+  - A task can only be marked as **completed** if all its dependencies are completed first. This ensures that tasks are completed in the correct order.
+  - Added a new method `add_dependency()` to establish dependencies between tasks.
+  - Added a `status` attribute to each task, with possible values: **not_started**, **in_progress**, and **completed**.
+  
+#### 2. **Dependency Management:**
+- Tasks can now have dependencies, which are other tasks that must be completed first before the current task can begin.
+- Dependencies are set using the `add_dependency()` method, and the system ensures that tasks are not completed until all tasks they depend on are finished.
+  
+#### 3. **Completion Logic:**
+- Tasks have a `complete()` method that checks if all dependencies are completed before allowing a task to be marked as **completed**.
+- The `complete()` method prevents circular dependencies and ensures that task completion follows a logical order based on dependencies.
+
+#### 4. **Driver Code (`TaskSystemDriver.py`):**
+- The `TaskSystemDriver.py` script demonstrates how to create tasks, set up dependencies, and manage task completion.
+- Tasks are created and dependencies are added between them. Then, the script attempts to complete tasks, demonstrating how the system ensures dependencies are met before marking a task as complete.
+  
+### Example Workflow:
+1. **Adding tasks**: You can add tasks to the task database.
+2. **Setting dependencies**: Tasks can depend on each other, ensuring the completion order is respected.
+3. **Completing tasks**: Tasks can only be marked as completed if their dependencies have been completed first.
