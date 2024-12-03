@@ -3,14 +3,14 @@ from Node import Node
 
 class FolderNode(Node):
     def __init__(self, name):
-        super().__init__(name)  # Initialize the base class with the name
+        super().__init__(name)  # Initialize with name
         self.files = []  # List to hold files in this folder
 
     def add_file(self, file):
         self.files.append(file)
 
     def __repr__(self):
-        return f"Folder({self.name})"  # Use 'self.name' to access the folder name
+        return f"Folder({self.name})"
 
 class FileNode(Node):
     def __init__(self, name, data=None):
